@@ -1,36 +1,100 @@
+/* Style for the background image */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    background-image: url('images/Kelowna_fall.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    color: black;
+    position: relative;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Style for the header content with image and text */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
 }
 
-nav ul li {
-    display: inline;
+/* Headshot styling */
+.headshot {
+    border-radius: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     margin-right: 20px;
 }
 
+/* Adjusted Name and Titles */
+.name-titles h1 {
+    margin: 0;
+    font-size: 2.5em;
+    line-height: 1.1; /* Adjusted to reduce spacing between name and titles */
+}
+
+.name-titles p {
+    font-size: 1.2em;
+    margin-top: 5px; /* Reduced margin to bring titles closer to the name */
+}
+
+/* Move About Section Lower */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    top: 120px; /* Adjusted to move menu down a bit */
+}
+
+.boxed-section {
+    padding: 20px;
+    margin: 40px; /* Increased margin to move the sections lower */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Navigation bar style */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    top: 100px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
 nav ul li a {
-    color: white;
+    font-size: 1.2em;
+    color: black;
     text-decoration: none;
 }
 
-section {
+/* Style for the sections */
+.boxed-section {
     padding: 20px;
     margin: 20px;
-    background-color: white;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Contact section */
+.linkedin-logo {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
