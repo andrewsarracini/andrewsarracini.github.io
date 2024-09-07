@@ -98,3 +98,77 @@ nav ul li a {
     vertical-align: middle;
     margin-right: 10px;
 }
+
+/* Portfolio Section Styling */
+#portfolio {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+  
+  #portfolio h2 {
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  /* Project Card Layout */
+  .project-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card img.project-img {
+    width: 150px; /* Image size */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .project-info {
+    max-width: 600px;
+  }
+  
+  .project-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .project-info p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .project-info a {
+    color: #1a0dab;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Adjust card layout for smaller screens */
+  @media (max-width: 768px) {
+    .project-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .project-card img.project-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .project-info {
+      max-width: 100%;
+    }
+  }
+  
