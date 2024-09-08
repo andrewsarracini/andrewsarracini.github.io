@@ -1,4 +1,4 @@
-/* Style for the background image */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,7 +15,7 @@ header {
     position: relative;
 }
 
-/* Style for the header content with image and text */
+/* Header content with image and text */
 .header-content {
     display: flex;
     align-items: center;
@@ -23,7 +23,6 @@ header {
     padding-left: 20px;
 }
 
-/* Headshot styling */
 .headshot {
     border-radius: 0;
     width: 150px;
@@ -32,37 +31,17 @@ header {
     margin-right: 20px;
 }
 
-/* Adjusted Name and Titles */
 .name-titles h1 {
     margin: 0;
     font-size: 2.5em;
-    line-height: 1.1; /* Adjusted to reduce spacing between name and titles */
+    line-height: 1.1;
 }
 
 .name-titles p {
     font-size: 1.2em;
-    margin-top: 5px; /* Reduced margin to bring titles closer to the name */
+    margin-top: 5px;
 }
 
-/* Move About Section Lower */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    position: relative;
-    top: 120px; /* Adjusted to move menu down a bit */
-}
-
-.boxed-section {
-    padding: 20px;
-    margin: 40px; /* Increased margin to move the sections lower */
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-}
-
-/* Navigation bar style */
 nav ul {
     display: flex;
     justify-content: center;
@@ -83,92 +62,94 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Style for the sections */
 .boxed-section {
     padding: 20px;
-    margin: 20px;
+    margin: 40px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
 }
 
-/* Contact section */
-.linkedin-logo {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-/* Portfolio Section Styling */
+/* Portfolio Section */
 #portfolio {
     padding: 40px 0;
     background-color: #f9f9f9;
-  }
-  
-  #portfolio h2 {
+}
+
+#portfolio h2 {
     font-size: 28px;
     text-align: left;
     margin-bottom: 40px;
-  }
-  
-  /* Project Card Layout */
-  .project-card {
+    padding-left: 20px; /* Added padding to move it away from the left edge */
+}
+
+/* Project Card Layout */
+.project-card {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Aligns image with title */
     margin-bottom: 30px;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-card img.project-img {
-    width: 150px; /* Image size */
-    height: 150px;
+}
+
+.project-card img.project-img {
+    width: 180px; /* Increased image size */
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 20px;
-  }
-  
-  .project-info {
+}
+
+.project-info {
     max-width: 600px;
-  }
-  
-  .project-info h3 {
+    white-space: normal; /* Removed nowrap so text wraps naturally */
+    word-wrap: break-word; /* Ensures long words or links don't break layout */
+}
+
+.project-info h3 {
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  
-  .project-info p {
+    color: black;
+}
+
+.project-info p {
     margin-bottom: 10px;
-    color: #555;
-  }
-  
-  .project-info a {
+    color: black;
+}
+
+.project-info a {
     color: #1a0dab;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .project-info a:hover {
+}
+
+.project-info a:hover {
     text-decoration: underline;
-  }
-  
-  /* Adjust card layout for smaller screens */
-  @media (max-width: 768px) {
+}
+
+/* Adjust card layout for smaller screens */
+@media (max-width: 768px) {
     .project-card {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
     .project-card img.project-img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
-  
+
     .project-info {
-      max-width: 100%;
+        max-width: 100%;
     }
-  }
-  
+}
+
+/* Contact section */
+.linkedin-logo {
+    width: 30px; /* Adjusted to a reasonable size slightly larger than text */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}

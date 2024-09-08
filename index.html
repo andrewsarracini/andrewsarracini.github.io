@@ -38,8 +38,21 @@
         <div class="project-card">
             <img src="images/cycleGAN_title_card.png" alt="CycleGAN" class="project-img">
             <div class="project-info">
-              <h3>CycleGAN Analysis: Image-to-Image Translation</h3>
-              <p>Applied Cycle-Consistent Generative Adversarial Networks (CycleGAN) to translate images between domains.</p>
+              <h3>CycleGAN Analysis: Image-to-Image Translation with Unpaired Data</h3>
+              <ul>
+                <li>Circular loss-induced improvement models to overcome the paired data requirement</li>
+                <li>Generators with 6 residual blocks</li>
+                <li>The PatchGAN Discriminator</li>
+            </ul>
+            <p>Six unique experiments were also featured to improve upon pre-existing code. This involved modifying:</p>
+            <ul>
+                <li>Batch Normalization</li>
+                <li>Instance Normalization</li>
+                <li>The ReLU Activation function</li>
+                <li>Loss-controlling (penalization) weights</li>
+                <li>Maximum number of epochs</li>
+                <li>Sample size</li>
+            </ul>
               <a href="https://drive.google.com/file/d/1T2pd2u0rXCvBKfVFnpDPTg0VI7p5ZcTS/view?usp=sharing" target="_blank">View Paper (PDF)</a>
             </div>
           </div>
@@ -49,7 +62,7 @@
             <img src="images/FireAnalysis_full.png" alt="Wildfire Analysis" class="project-img">
             <div class="project-info">
               <h3>Historical Analysis and Insights: US Wildfires (1992-2009)</h3>
-              <p>Analyzed U.S. wildfire data to provide historical insights using visualization and statistical analysis.</p>
+              <p>Created a dynamic visualization tool that educates viewers about the impact and destruction caused by wildfires across the United States (1992-2009). Displays a toggleable timescale of the USA and selectable states, according to fire severity class (A-G). Additionally features region-varying wildfire causes and overall totals for affected areas.</p>
               <a href="https://github.com/andrewsarracini/DATA551_FireAnalysis" target="_blank">View GitHub Repo</a>
             </div>
           </div>
@@ -59,7 +72,14 @@
             <img src="images/YTExploreR_full.png" alt="YTExploreR" class="project-img">
             <div class="project-info">
               <h3>YTExploreR: R Package for YouTube API</h3>
-              <p>An R package to explore and analyze YouTube data using the YouTube API.</p>
+              <p>A fully deployed R package that wraps the YouTube API into a set of functions to assist creators and viewers in parsing YouTube analytics. Specifically aimed at new creators, YTExploreR is designed to analyze the behavior of successful channels, then translate it into actionable business insights for reproducible success.</p>
+              <p>YTExploreR provides data-driven insights, such as:</p>
+              <ul>
+                  <li>Decreasing video length</li>
+                  <li>Posting videos after 8:00 PM EST to appeal to a certain demographic</li>
+                  <li>Encouraging audience participation through likes and comments</li>
+                  <li>Modifying content to better align with the target audience</li>
+              </ul>
               <a href="https://github.com/KarthigaSethu/YTExploreR" target="_blank">View GitHub Repo</a>
             </div>
           </div>
@@ -70,6 +90,14 @@
             <div class="project-info">
               <h3>LAPD Crime Data Analysis</h3>
               <p>Analyzed LAPD crime data to uncover trends and generate statistical insights.</p>
+              <ul>
+                <li>Clustering Latitude and Longitude to Determine Novel Patrol Boundaries</li>
+                <li>Determining Safe and Unsafe Time Periods</li>
+                <li>Determining Response Rates across Location, Crime Type, and Victim Age</li>
+                <li>Developed methodologies to improve LAPD effectiveness and accuracy in crime tracking</li>
+                <li>Forecasting Overarching Crime Trends Over Time</li>
+                <li>Target Demographic of Crime</li>
+            </ul>
               <a href="https://github.com/KarthigaSethu/LAPD-Data-Analysis" target="_blank">View GitHub Repo</a>
             </div>
           </div>
@@ -79,7 +107,7 @@
             <img src="images/BeverageBuddy.png" alt="BeverageBuddy" class="project-img">
             <div class="project-info">
               <h3>BeverageBuddy: API-Driven Cocktail Search App</h3>
-              <p>Built a web application that allows users to search for cocktail recipes using a cocktail API.</p>
+              <p>A tool that utilizes the CocktailDB API for selecting a user's beverage preferences. Includes a built-in Recommendation System and vastly improved GUI through the use of Python’s Tkinter toolkit.</p>
               <a href="https://github.com/andrewsarracini/CocktailDB_API" target="_blank">View GitHub Repo</a>
             </div>
           </div>
