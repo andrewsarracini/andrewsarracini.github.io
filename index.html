@@ -3,122 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Sarracini</title>
+    <title>Andrew Sarracini · Data Scientist & Applied AI</title>
+    <meta name="description" content="Andrew Sarracini: data scientist and Head of Technology in Portland, OR. LLM agents, evals, production data pipelines, and predictive modeling.">
+    <meta property="og:title" content="Andrew Sarracini · Data Scientist & Applied AI">
+    <meta property="og:description" content="Head of Technology at Keyspire. LLM agents, evals, production data pipelines, and predictive modeling.">
+    <meta property="og:image" content="https://andrewsarracini.github.io/images/headshot.jpg">
+    <meta property="og:url" content="https://andrewsarracini.github.io/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="images/Andrew_headshot.png" alt="Andrew Sarracini" class="headshot">
-            <div class="name-titles">
+    <header class="hero">
+        <div class="hero-inner">
+            <img src="images/headshot.jpg" alt="Andrew Sarracini" class="headshot">
+            <div>
                 <h1>Andrew Sarracini</h1>
-                <p style="font-size: 22px"><strong>Data Scientist | Athlete | Scifi Fantasy Enthusiast | Elden Lord</strong></p>
+                <p class="headline">Data Scientist · Applied AI</p>
+                <p class="subline">Head of Technology at Keyspire · Portland, OR</p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="Andrew_Sarracini_Resume.pdf" target="_blank">Résumé</a>
+                    <a class="btn" href="https://www.linkedin.com/in/andrew-sarracini/" target="_blank">LinkedIn</a>
+                    <a class="btn" href="https://github.com/andrewsarracini" target="_blank">GitHub</a>
+                </div>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="about" class="boxed-section">
-        <h2>About Me</h2>
-        <p>Hi there, I'm Andrew Sarracini-- a Data Scientist based in Portland, OR. I recently graduated from the University of British Columbia Okanagan with my <a href="https://masterdatascience.ubc.ca/programs/okanagan">Master of Data Science (MDS)</a> My path to Data Science is rooted in curiosity, a drive to better understand the physical world around me, and a sincere effort to improve outcomes for humanity as a whole. My undergraduate degree is in Life Sciences, which heavily featured biology, chemistry and physiology– all fields that centre on learning from statistically significant data being visualized and expanded upon in research studies. Over time and out of necessity, my data literacy improved in order to better comprehend the increasingly complex research topics I was studying. As I learned, the potential benefit of being an adaptable expert in data – as opposed to a more constrained field – was incredibly enticing, and I have been pursuing that goal ever since.</p>
-        <p>I’m fascinated by leveraging data to its fullest potential. From building and optimizing predictive models, to translating analytics into concise business insights for key stakeholders; I'm continually learning and pushing the boundary on what's possible. Additionally, I take great joy in storytelling, and I believe that all data has a narrative. Numbers and figures within dashboards are only the tip of the metaphorical iceberg, and are often representative of entire teams of hidden data-producers, product managers, and engineers. I take joy in constructing a real story around my data, where I aim to ground my audience in realism; using this as a clarifying tool for those who lack background experience that I possess. I understand that the reception of information I compile can have long-lasting effects, and the better my understanding, the more accurately I can present my findings.</p>
-        <p>I am passionate about fitness, science fiction and fantasy books, experimental cooking and challenging hikes. I perform at my best in tight-knit team environments, where I can strive to project tenacity and a ceaseless drive to overcome obstacles. It's nice to meet you!</p>
-    </section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section id="portfolio" class="boxed-section">
-        <h2>Portfolio</h2>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>I'm a data scientist who builds. As Head of Technology at <a href="https://keyspire.com" target="_blank">Keyspire</a>, I'm the sole technical lead: I take problems straight from coaches, operations, and leadership, decide what to build, and own it in production, from LLM agents to the data pipelines the business runs on. I measure model behavior instead of guessing at it.</p>
+            <p>Before that: a <a href="https://masterdatascience.ubc.ca/programs/okanagan" target="_blank">Master of Data Science</a> at UBC Okanagan, a predictive-modeling capstone with the St. Louis Blues (NHL), and research data work at St. Joseph's Hospital. My undergrad is in Life Sciences from McMaster.</p>
+            <p>Outside work I play in two competitive hockey leagues, run (lifelong distance runner), and go after hard mountain hikes. Sci-fi and fantasy fill the rest. It's nice to meet you!</p>
+        </section>
 
-        <!-- CycleGAN Paper -->
-        <div class="project-card">
-            <img src="images/cycleGAN_title_card.png" alt="CycleGAN" class="project-img">
-            <div class="project-info">
-              <h3>CycleGAN Analysis: Image-to-Image Translation with Unpaired Data</h3>
-              <ul>
-                <li>Circular loss-induced improvement models to overcome the paired data requirement</li>
-                <li>Generators with 6 residual blocks</li>
-                <li>The PatchGAN Discriminator</li>
-            </ul>
-            <p>Six unique experiments were also featured to improve upon pre-existing code. This involved modifying:</p>
-            <ul>
-                <li>Batch Normalization</li>
-                <li>Instance Normalization</li>
-                <li>The ReLU Activation function</li>
-                <li>Loss-controlling (penalization) weights</li>
-                <li>Maximum number of epochs</li>
-                <li>Sample size</li>
-            </ul>
-              <a href="https://drive.google.com/file/d/1T2pd2u0rXCvBKfVFnpDPTg0VI7p5ZcTS/view?usp=sharing" target="_blank">View Paper (PDF)</a>
-            </div>
-          </div>
-    
-        <!-- Wildfire Dashboard -->
-        <div class="project-card">
-            <img src="images/FireAnalysis_full.png" alt="Wildfire Analysis" class="project-img">
-            <div class="project-info">
-              <h3>Historical Analysis and Insights: US Wildfires (1992-2009)</h3>
-              <p>Created a dynamic visualization tool that educates viewers about the impact and destruction caused by wildfires across the United States (1992-2009). Displays a toggleable timescale of the USA and selectable states, according to fire severity class (A-G). Additionally features region-varying wildfire causes and overall totals for affected areas.</p>
-              <a href="https://github.com/andrewsarracini/DATA551_FireAnalysis" target="_blank">View GitHub Repo</a>
-            </div>
-          </div>
+        <section id="work">
+            <h2>Work</h2>
 
-        <!-- YTExploreR Package -->
-        <div class="project-card">
-            <img src="images/YTExploreR_full.png" alt="YTExploreR" class="project-img">
-            <div class="project-info">
-              <h3>YTExploreR: R Package for YouTube API</h3>
-              <p>A fully deployed R package that wraps the YouTube API into a set of functions to assist creators and viewers in parsing YouTube analytics. Specifically aimed at new creators, YTExploreR is designed to analyze the behavior of successful channels, then translate it into actionable business insights for reproducible success.</p>
-              <p>YTExploreR provides data-driven insights, such as:</p>
-              <ul>
-                  <li>Decreasing video length</li>
-                  <li>Posting videos after 8:00 PM EST to appeal to a certain demographic</li>
-                  <li>Encouraging audience participation through likes and comments</li>
-                  <li>Modifying content to better align with the target audience</li>
-              </ul>
-              <a href="https://github.com/KarthigaSethu/YTExploreR" target="_blank">View GitHub Repo</a>
-            </div>
-          </div>
+            <article class="card">
+                <h3>Keyspire AI Assistant</h3>
+                <div class="tags"><span>OpenAI Agents SDK</span><span>TypeScript</span><span>PostgreSQL</span><span>RAG</span><span>Evals</span></div>
+                <p>An LLM coaching agent for a ~1,000-member real estate investing community, taken from prototype to paid launch in about 3.5 weeks.</p>
+                <ul>
+                    <li>Retrieval over a 337K-word course library, persistent conversation memory, live listing search, and deterministic deal-analysis tools, at under 1¢ per reply</li>
+                    <li>A ~130-check live-model eval suite gates every behavior change. Used it to cut consistently failing knowledge checks from 24 of 92 to 0 by tuning a relevance cutoff from measured score distributions</li>
+                    <li>Prompt-injection fencing, domain allow-listing, and per-user rate limits</li>
+                </ul>
+            </article>
 
-        <!-- LAPD Crime Analysis -->
-        <div class="project-card">
-            <img src="images/LAPD_full.png" alt="LAPD Crime Analysis" class="project-img">
-            <div class="project-info">
-              <h3>LAPD Crime Data Analysis</h3>
-              <p>Analyzed LAPD crime data to uncover trends and generate statistical insights.</p>
-              <ul>
-                <li>Clustering Latitude and Longitude to Determine Novel Patrol Boundaries</li>
-                <li>Determining Safe and Unsafe Time Periods</li>
-                <li>Determining Response Rates across Location, Crime Type, and Victim Age</li>
-                <li>Developed methodologies to improve LAPD effectiveness and accuracy in crime tracking</li>
-                <li>Forecasting Overarching Crime Trends Over Time</li>
-                <li>Target Demographic of Crime</li>
-            </ul>
-              <a href="https://github.com/KarthigaSethu/LAPD-Data-Analysis" target="_blank">View GitHub Repo</a>
-            </div>
-          </div>
-          
-        <!-- BeverageBuddy App -->
-        <div class="project-card">
-            <img src="images/BeverageBuddy.png" alt="BeverageBuddy" class="project-img">
-            <div class="project-info">
-              <h3>BeverageBuddy: API-Driven Cocktail Search App</h3>
-              <p>A tool that utilizes the CocktailDB API for selecting a user's beverage preferences. Includes a built-in Recommendation System and vastly improved GUI through the use of Python’s Tkinter toolkit.</p>
-              <a href="https://github.com/andrewsarracini/CocktailDB_API" target="_blank">View GitHub Repo</a>
-            </div>
-          </div>
+            <article class="card">
+                <h3>Subscription Data Pipeline</h3>
+                <div class="tags"><span>Python</span><span>Stripe</span><span>CRM APIs</span></div>
+                <p>A nightly pipeline that manages the subscription lifecycle for ~1,000 members and reconciles billing against the CRM.</p>
+                <ul>
+                    <li>~975 automated updates over 67 production runs, plus a nightly exceptions list the operations team works from</li>
+                    <li>Replaced ~20 hours a week of manual work</li>
+                    <li>Built the company's first churn baseline and traced a silent renewal failure to its root cause</li>
+                </ul>
+            </article>
 
-    </section>
+            <article class="card">
+                <h3>Deal Analyzer</h3>
+                <div class="tags"><span>React</span><span>Express</span><span>PostgreSQL</span><span>Google OAuth</span></div>
+                <p>A full-stack investment-analysis app with CRM-gated access for the member community. Its calculation engine also powers the AI Assistant's deal analysis.</p>
+            </article>
 
-    <section id="contact" class="boxed-section">
-        <h2>Contact</h2>
-        <p><a href="https://www.linkedin.com/in/andrew-sarracini/" target="_blank"><img src="images/LinkedIn_logo.png" alt="LinkedIn" class="linkedin-logo">Andrew Sarracini on LinkedIn</a></p>
-        <p>Email: andrewsarracini1@gmail.com</p>
-        <p>Phone: 971-404-9633</p>
-    </section>
+            <article class="card">
+                <h3>St. Louis Blues: Predictive Modeling Capstone</h3>
+                <div class="tags"><span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>PyTorch</span></div>
+                <p>A confidential classification task with an NHL club. Raised balanced accuracy more than 3x on multi-source data with extreme class imbalance, missing values, and fuzzy name-matching, using 28 engineered features and a comparison of gradient boosting, random forest, and neural network models.</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article class="card project">
+                <img src="images/cyclegan.jpg" alt="CycleGAN paper title page and architecture diagram">
+                <div>
+                    <h3>CycleGAN: Image-to-Image Translation with Unpaired Data</h3>
+                    <p>A paper analyzing CycleGAN's cycle-consistency loss, residual-block generators, and PatchGAN discriminator, with six experiments on normalization, activations, loss weights, epochs, and sample size.</p>
+                    <a href="https://drive.google.com/file/d/1T2pd2u0rXCvBKfVFnpDPTg0VI7p5ZcTS/view?usp=sharing" target="_blank">View paper (PDF) →</a>
+                </div>
+            </article>
+
+            <article class="card project">
+                <img src="images/wildfires.jpg" alt="US wildfires dashboard">
+                <div>
+                    <h3>US Wildfires, 1992–2009: Interactive Dashboard</h3>
+                    <p>An interactive visualization of wildfire impact across the US, filterable by year, state, and severity class, with regional breakdowns of causes and area burned.</p>
+                    <a href="https://github.com/andrewsarracini/DATA551_FireAnalysis" target="_blank">View GitHub repo →</a>
+                </div>
+            </article>
+
+            <article class="card project">
+                <img src="images/ytexplorer.jpg" alt="YTExploreR analytics charts">
+                <div>
+                    <h3>YTExploreR: R Package for the YouTube API</h3>
+                    <p>An R package that wraps the YouTube API so creators can study what successful channels do (video length, posting time, engagement) and turn it into actionable changes.</p>
+                    <a href="https://github.com/KarthigaSethu/YTExploreR" target="_blank">View GitHub repo →</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>The best way to reach me is email: <a href="mailto:andrewsarracini1@gmail.com">andrewsarracini1@gmail.com</a>. You can also find me on <a href="https://www.linkedin.com/in/andrew-sarracini/" target="_blank">LinkedIn</a> and <a href="https://github.com/andrewsarracini" target="_blank">GitHub</a>.</p>
+        </section>
+    </main>
+
+    <footer>© 2026 Andrew Sarracini</footer>
 </body>
 </html>
